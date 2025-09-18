@@ -1,22 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import ShopContextProvider from './Pages/ShopContext';
-import { Router } from 'react-router-dom';
+const express = require('express');
+const mongoose = require('mongoose');
+const cartRoutes = require('./db/routes/cartRoutes'); // Import cart routes
 
-//import 'bootstrap/dist/css/bootstrap.min.css';
+const app = express();
+const port = 5001;
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// Middleware to parse JSON bodies
+app.use(express.json());
 
- <App />
-   
+// Use cart routes
+app.use(cartRoutes);
 
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
+mongoose.connect('mongodb://localhost:27017/internship', { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        console.log('MongoDB connected');
+        app.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+        });
+    })
+    .catch((err) => {
+        console.error('MongoDB connection error:', err);
+    });
