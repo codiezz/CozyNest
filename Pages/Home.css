@@ -1,0 +1,305 @@
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+.home-img{
+    position: fixed;
+    align-items: center;
+    /* margin-top: 160px; */
+    /* margin-left: 50px; */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.home-login button{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 75px;
+    color: dimgrey;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FFFDD0;
+    cursor: pointer;
+}
+
+.home-img-text button:hover{
+    background: #FFFDD0;
+    color: #6A5ACD;
+}
+.home{
+    background: url('../components/Logos/home-img.jpg') center center/cover no-repeat ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    min-height: 100vh;
+    flex: 1;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.home-img-text{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a background with opacity */
+  padding: 140px;
+  border-radius: 10px;
+}
+
+.home-img-text h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 5px;
+}
+
+.home-img-text p{
+    padding: 20px ;
+    font-size: 1.5em; /* Increased font size */
+    margin: 20px 0 0;
+}
+.home-img-text button{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 75px;
+    color: #FFFDD0;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #6A5ACD;
+    cursor: pointer;    
+
+}
+.home-img-text button:hover{
+    background:#FFFDD0;
+    color: #6A5ACD;
+    transform: scale(1.1);
+
+}
+
+.home-login button:hover{
+    background:#FFFDD0;
+    color: #6A5ACD;
+    transform: scale(1.1);
+
+
+}
+.home-btn{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 75px;
+    color: #FFFDD0;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #6A5ACD;
+    cursor: pointer;  
+
+}
+
+.home-btn:hover{
+    background:#FFFDD0;
+    color: #6A5ACD;
+    transform: scale(1.1);
+
+}
+
+.abt1{
+    text-align: center;
+    margin-top: 1.5rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 630px;
+    margin-top: -640px;
+    margin-left: 1210px;
+  padding: 100px;
+  border: 1px solid #FFFDD0;
+  border-radius: 5px;
+  background-color: rgb(161, 95, 28);
+  color: #FFFDD0;
+  p{
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1{
+    font-size: 35px;
+  }
+}
+
+.abt0{
+    align-items: center;
+    margin-bottom: -4px;
+    margin-top: 8px;
+    text-align: center;
+    padding: 20px;
+    border: 0px solid #FFFDD0;
+  border-radius: 6px;
+   background-color: #50478a; 
+  font-size: 20px;
+  color: #FFFDD0;
+  z-index: -1;
+  font-weight: 1000;
+  hr{
+    width: 1000px;
+  }
+}
+
+.abt img{
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: -5px;
+    height: 90%;
+}
+
+.abt2{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: -5px;
+    height: 90%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 1030px;
+    margin-top: -12px;
+    margin-left: 1200px;
+}
+
+.abt2-text{
+    padding: 100px;
+  border: 1px solid #FFFDD0;
+  border-radius: 6px;
+  background-color: rgb(19, 37, 59);
+  color: #FFFDD0;
+  margin-right: 810px;
+margin-left: -1204px;
+margin-top: -1100px;
+width: 1000px;
+height: 889px;
+text-align: center;
+font-weight: 10;
+p{
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1{
+    font-size: 40px;
+    line-height: 3;
+  }
+
+}
+
+.shop-button{
+     align-items: center; 
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 12px;
+padding: 10px;
+margin-left: 150px;
+margin-top: 30px;
+
+}
+
+.shop-buttons{
+     width: 260px;
+    height: 260px;
+    outline: none;
+    border: 1px solid #6A5ACD;
+    border-radius: 140px;
+    color: #50478a;
+    font-size: 27px;
+    font-weight: 400;
+    background-color: #FFFDD0;
+    cursor: pointer;  
+    padding: 20px;
+
+}
+
+.shop-buttons:hover{
+    transform: scale(1.05);
+  
+    
+}
+.shop h1{
+    font-size: 28px;
+}
+
+.shop-buttons img{
+    width: 250px;
+    height: 250px;
+    border-radius: 160px;
+    padding: 20px;
+    margin-top: -36px;
+    margin-left: -37px;
+}
+.shop-buttons p{
+    margin-top: -80px;
+    color: #50478a;
+    
+}
+
+.shop{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-category-img{
+    display: block;
+    margin: 5px auto;
+    margin-left: 2px;
+    width: 2020px;
+    height: 470px;
+}
+
+.shop-category-indexsort{
+    display: flex;
+    margin: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-category-indexsort p span{
+    font-weight: 600;
+}
+
+.shopcategory-products{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+/* .header{
+    background-color: #50478a;
+    padding: 30px;
+}
+
+.Banner{
+    background-color: #3dd6c9;
+padding: 60px;
+margin-top: 30px;
+} */
