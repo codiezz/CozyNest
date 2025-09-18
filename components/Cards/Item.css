@@ -1,0 +1,107 @@
+.item{
+    width: 480px;
+    padding: 2.9px;
+    box-shadow: 1px 5px 8px 1px black;
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item p{
+    margin: 6px 0px;
+}
+
+.item-price{
+    display: flex;
+    gap: 10px; 
+}
+
+.item-price-new{
+    color: darkgreen;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item-price-old{
+    color: brown;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item:hover{
+    transform: scale(1.05); /* Scale the card slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.popular{
+     display: flex;
+     flex-direction: column; 
+     align-items: center;
+     gap: 10px;
+     height: 90vh;
+     padding: 25px;
+
+}
+
+/* .popular-head{
+    background-color: bisque;
+    width: 1600px;;
+} */
+
+.popular h1{
+    color: darkorchid;
+    text-shadow:3px 3px 5px rgb(0, 0, 0);
+    font-size: 55px;
+    font-weight: 600;
+    margin: 20px;
+   
+
+}
+
+.popular p{
+    font-size: 20px;
+    text-align: left;
+}
+
+.popular hr{
+    width: 1900px;
+    height: 6px;
+    border-radius: 10px;
+background-color: #5c5b5b; 
+
+}
+
+.popular-item{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 18px;  
+    cursor: pointer;
+}
+
+.popular-item:hover{
+    transform: (1.05);
+    transition: 0.6s;
+}
+
+.item-rating{
+
+    padding: 18px;
+    position: absolute;
+    
+
+}
+
+.star-icon{
+    color: rgba(137, 43, 226, 0.644);
+  font-size: 25px;
+  margin: 5px;
+  text-align: left;
+  display: inline;
+
+}
+
+.item-sales{
+    display: contents ;
+    text-align: end;
+}
