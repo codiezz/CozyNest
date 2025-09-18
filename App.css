@@ -1,0 +1,102 @@
+
+
+.formm{
+    
+    text-align: center;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 10000px;
+    margin-top: 0px;
+    margin-left: 0px;
+   color: #392f7e;
+  border-radius: 5px;
+  background-image: url('../src/components/Logos/login-bg.jpg')  ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat  ;
+  height: 100vh; 
+  width: 2049px;
+  overflow: hidden;
+  
+    form{
+        width: 50%;
+        border: 1px solid #6A5ACD;
+        background-color: #f9f9f9ad;
+        padding: 40px;
+        max-width: 1000px;
+        padding: 1rem 2rem 2rem 2rem;
+        box-shadow: 1px 6px 9px 2px black;;
+        
+        btn{
+text-align: center;
+
+        }
+        p{
+            text-align: left;
+            font-size: 20px;
+            font-weight: 100;
+        }
+        h1{
+            padding: 0 0rem 2rem 0rem ;
+            font-size: 40px;
+        }
+    }
+
+}
+input{
+    padding: 0.9rem 2rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    border: 2px solid #6A5ACD;  
+    background-color: rgba(195, 198, 201, 0.836);
+    font-size: 18px;
+}
+.btn{
+    width: 157px;
+    height: 68px;
+    outline: none;
+    border: 1px solid #6A5ACD;
+    border-radius: 75px;
+    color: #f9f9f9;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #7d71cf;
+    cursor: pointer;
+    padding: 7px;
+
+}
+button:hover{
+    border: 1px solid #6A5ACD;
+    color: dimgray;
+    background-color: rgb(214, 207, 252);
+
+
+}
+
+.Banner{
+    background-color: tomato;
+    text-align: center;
+}
+
+/* .home-img{ */
+
+/* } */
+.home-login button{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 75px;
+    color: dimgrey;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FFFDD0;
+    cursor: pointer;
+}
+
+.home-login button:hover{
+    background: #6A5ACD;
+    color: #FFFDD0;
+}
